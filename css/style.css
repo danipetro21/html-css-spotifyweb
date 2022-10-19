@@ -6,11 +6,34 @@
     box-sizing: border-box;
 }
 
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 /*GENERAL RULES*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
 .container{
     width: calc(100% - 200px);
 }
 
+a{
+    text-decoration: none;
+}
+
+.margin-bottom{
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+/* sotto titoli in grigio */
+
+.subtitle{
+
+    color: #5c5d60;
+}
 
 /*style top bar*/
 
@@ -34,9 +57,14 @@
     position: absolute;
     top: 100px;
     left: 200px;
+
 }
 
 /*Style sidebar*/
+
+.logo-xs{
+    display: none;
+}
 
 .side-bar{
     width: 200px;
@@ -45,6 +73,19 @@
 
     position: fixed;
     z-index: 210;
+
+    padding: 20px;
+
+}
+
+.side-bar h3{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.icon{
+    color: #5c5d60;
+    font-size: 1.3rem;
 }
 
 /*Style bottom-bar*/

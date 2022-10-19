@@ -1,0 +1,33 @@
+/* media query */
+
+/* smartphone */
+
+@media screen and (max-width:590px) {
+    .subtitle{
+        display: none;
+    }
+    
+    .logo{
+        display: none;
+    }
+    .logo-xs{
+        display: block;
+
+    }
+
+    .side-bar{
+        width: 60px;
+        text-align: center;
+    }
+    
+    .side-bar h3{
+        display: none;
+    }
+
+    .player, .bottom-bar, .top-bar{
+        left: 50px;
+        width: 100%;
+    }
+}
+
+/* tablet */
