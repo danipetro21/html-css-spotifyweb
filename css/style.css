@@ -5,3 +5,55 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/*GENERAL RULES*/
+.container{
+    width: calc(100% - 200px);
+}
+
+
+/*style top bar*/
+
+.top-bar{
+    min-height: 100px;
+    background-color: #080b12;
+
+    position: fixed;
+    left: 200px;
+    z-index: 200;
+}
+
+
+
+/*style player*/
+
+.player{
+    min-height: 200vh;
+    background-color: #141922;
+
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+/*Style sidebar*/
+
+.side-bar{
+    width: 200px;
+    min-height: 100vh;
+    background-color: #000000;
+
+    position: fixed;
+    z-index: 210;
+}
+
+/*Style bottom-bar*/
+
+.bottom-bar{
+    min-height: 100px;
+    background-color: #282828;
+    position: fixed;
+    left: 200px;
+    bottom: 0;
+    z-index: 200;
+}
