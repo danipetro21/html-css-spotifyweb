@@ -32,6 +32,8 @@ a{
 
 h1{
     color: white;
+
+    margin:30px 0;
 }
 /* sotto titoli in grigio */
 
@@ -69,9 +71,9 @@ h1{
 /*style player*/
 
 .player{
-    min-height: 200vh;
+
     background-color: #141922;
-    
+    min-height: 170vh;
     position: absolute;
     left: 200px;
     top: 100px;
@@ -87,6 +89,7 @@ h1{
     list-style: none;
     display: flex;
     gap: 20px;
+    font-size: 0.8rem;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -94,19 +97,33 @@ h1{
 
 .cards{
     display: flex;
-
+    flex-wrap: wrap;
+    
 }
 
 .card{
     width: calc(100% / 6 - 20px);
     margin: 0 10px;
-
+    text-align: center;
+    display: flex;
+    flex-direction: column;
  
     
+}
+.card a{
+    color: white;
+    font: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.card label{
+    color: #5c5d60;
+    font-size: 0.9rem;
 }
 
 .card img{
     width: 100%;
+    margin-bottom: 20px;
 }
 .cat a{
     color: #5c5d60;
@@ -138,11 +155,6 @@ h1{
 .icon{
     color: #5c5d60;
     font-size: 1.3rem;
-}
-
-.playlist{
-    
-   
 }
 
 /*Style bottom-bar*/

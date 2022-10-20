@@ -1,5 +1,21 @@
 /* media query */
 
+/* tablet */
+
+@media screen and (max-width:950px) {
+
+    .card{
+        width: calc(100% / 3 - 20px);
+        flex-wrap: wrap;
+    }
+
+    .cat ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
 /* smartphone */
 
 @media screen and (max-width:590px) {
@@ -24,10 +40,18 @@
         display: none;
     }
 
-    .player, .bottom-bar, .top-bar{
+    .player, .top-bar{
         left: 50px;
-        width: 100%;
+        width: calc(100% - 50px);
+    }
+
+    .card{
+        width: calc(100% / 2 - 40px);
+        
+
+    }
+    .cards{
+        justify-content: center;
     }
 }
 
-/* tablet */
