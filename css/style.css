@@ -18,6 +18,7 @@ body{
 
 .container{
     width: calc(100% - 200px);
+
 }
 
 a{
@@ -27,6 +28,10 @@ a{
 .margin-bottom{
     margin-bottom: 20px;
     line-height: 28px;
+}
+
+h1{
+    color: white;
 }
 /* sotto titoli in grigio */
 
@@ -39,7 +44,7 @@ a{
 
 .top-bar{
     min-height: 100px;
-    background-color: #080b12;
+    background-color: #10141e;
 
     position: fixed;
     left: 200px;
@@ -66,13 +71,44 @@ a{
 .player{
     min-height: 200vh;
     background-color: #141922;
-
+    
     position: absolute;
-    top: 100px;
     left: 200px;
+    top: 100px;
+    padding: 20px;
+}
+
+.cat{
+    width: 100%;
+    height: 70px;
+}
+
+.cat ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.cards{
+    display: flex;
 
 }
 
+.card{
+    width: calc(100% / 6 - 20px);
+    margin: 0 10px;
+    min-height: 200px;
+    border: 1px solid white;
+    
+}
+
+.cat a{
+    color: #5c5d60;
+    font-size: 0.9rem;
+}
 /*Style sidebar*/
 
 .logo-xs{
@@ -83,7 +119,7 @@ a{
     width: 200px;
     min-height: 100vh;
     background-color: #000000;
-
+    overflow: scroll;
     position: fixed;
     z-index: 210;
 
@@ -101,13 +137,18 @@ a{
     font-size: 1.3rem;
 }
 
+.playlist{
+    
+   
+}
+
 /*Style bottom-bar*/
 
 .bottom-bar{
-    min-height: 100px;
+    width: 100%;
+    min-height: 80px;
     background-color: #282828;
     position: fixed;
-    left: 200px;
     bottom: 0;
-    z-index: 200;
+    z-index: 220;
 }
