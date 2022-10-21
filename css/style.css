@@ -1,6 +1,6 @@
 /* general rules */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,44 +11,47 @@
 
 /*GENERAL RULES*/
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
 
-.container{
+.container {
     width: calc(100% - 200px);
 
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.margin-bottom{
+.margin-bottom {
     margin-bottom: 20px;
     line-height: 28px;
 }
 
-h1{
+h1 {
     color: white;
 
-    margin:30px 0;
+    margin: 30px 0;
 }
 
-a:hover{
+a:hover {
     color: white;
 }
+
+
+
 /* sotto titoli in grigio */
 
-.subtitle{
+.subtitle {
 
     color: #5c5d60;
 }
 
 /*style top bar*/
 
-.top-bar{
+.top-bar {
     min-height: 100px;
     background-color: #10141e;
 
@@ -60,7 +63,7 @@ a:hover{
     justify-content: end;
 }
 
-.btn{
+.btn {
     background-color: transparent;
     border: white solid 2px;
     border-radius: 50px;
@@ -74,7 +77,7 @@ a:hover{
 
 /*style player*/
 
-.player{
+.player {
 
     background-color: #141922;
     min-height: 170vh;
@@ -84,16 +87,16 @@ a:hover{
     padding: 20px;
 }
 
-.cat{
+.cat {
     width: 100%;
     height: 70px;
 }
 
-.cat a:hover{
+.cat a:hover {
     color: white;
 }
 
-.cat ul{
+.cat ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -103,47 +106,85 @@ a:hover{
     height: 100%;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
-.card{
+.card {
     width: calc(100% / 6 - 20px);
     margin: 0 10px;
     text-align: center;
+
     display: flex;
     flex-direction: column;
- 
-    
+
+
 }
-.card a{
+
+.card a {
     color: white;
     font: 1.5rem;
     font-weight: 900;
     margin-bottom: 10px;
 }
-.card label{
+
+.card label {
     color: #5c5d60;
     font-size: 0.9rem;
 }
 
-.card img{
+.card img {
     width: 100%;
     margin-bottom: 20px;
 }
-.cat a{
+
+.cat a {
     color: #5c5d60;
     font-size: 0.9rem;
 }
+
+.cat .selected {
+    color: white;
+    border-bottom: 2px greenyellow solid;
+
+}
+
+
+
+.card-img {
+    display: relative;
+}
+
+.card img {
+    width: 100%;
+    top: 0;
+    left: 0;
+
+
+}
+
+.download {
+    display: none;
+    top: 0;
+    left: 0;
+
+
+}
+
+.music {
+    cursor: pointer;
+}
+
+
 /*Style sidebar*/
 
-.logo-xs{
+.logo-xs {
     display: none;
 }
 
-.side-bar{
+.side-bar {
     width: 200px;
     min-height: 100vh;
     background-color: #000000;
@@ -154,12 +195,46 @@ a:hover{
 
 }
 
-.side-bar h3{
+/*selected page*/
+
+.selected-home a{
+    color: white;
+
+}
+
+.selected-home{
+    border-left: 3px solid greenyellow;
+}
+
+
+.bottom-side-bar {
+    background-color: #000000;
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    padding: 20px 0;
+}
+
+.naviga li{
+    padding: 0 4px;
+}
+
+
+.install-app {
+    color: #5c5d60;
+}
+
+.user {
+    color: white;
+    font-size: 1rem;
+}
+
+.side-bar h3 {
     font-size: 1.1rem;
     color: white;
 }
 
-.icon{
+.icon {
     color: #5c5d60;
     font-size: 1.3rem;
 }
@@ -167,7 +242,7 @@ a:hover{
 
 /*Style bottom-bar*/
 
-.bottom-bar{
+.bottom-bar {
     width: 100%;
     min-height: 80px;
     background-color: #282828;
@@ -182,40 +257,113 @@ a:hover{
 
 }
 
-.bottom-bar i{
+.bottom-bar i {
+    color: white;
+    margin-left: 20px;
+}
+
+.bottom-bar a {
     color: white;
 }
-.bottom-bar a{
-    color: white;
-}
-.bottom-bar label{
+
+.bottom-bar label {
     color: #5c5d60;
     font-size: 0.7rem;
+    display: block;
 }
 
-.anteprima{
-    align-self: center;
+.anteprima {
+    width: calc(100% / 3);
+    align-items: center;
+    display: flex;
 
 }
-.anteprima i{
+
+.anteprima i {
     color: #5c5d60;
+
 }
 
-.anteprima img{
+.anteprima img {
     width: 10%;
     margin-right: 10px;
 }
 
-.play{
+.play {
     width: calc(100% / 3);
-    align-self: start;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-.play i{
+
+.play i {
     font-size: 1.6rem;
+
 }
 
-.volume{
-    align-self: center;
+.temp-line {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.temp-line span {
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 100;
+}
+
+.prog-bar {
+    width: 100%;
+    height: 10px;
+    padding: 1px;
+    border-radius: 25px;
+    background: #474545;
+
+}
+
+.prog-bar-inner {
+    width: 20%;
+    height: 6px;
+    background: cadetblue;
+    border-radius: 25px;
+}
+
+.volume {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.xs {
+    width: 20%;
+}
 
 
+/*HOVERR*/
+
+.card-img:hover .download {
+    display: inline;
+}
+
+.card-img:hover .music {
+    display: none;
+}
+
+.prog-bar:hover .prog-bar-inner{
+    background-color: greenyellow;
+}
+
+/*FX BTN UPGRADE*/
+
+.btn:hover {
+    transform: scale(1.2) perspective(1px)
+}
+
+.play i:hover {
+    transform: scale(1.2) perspective(1px)
 }

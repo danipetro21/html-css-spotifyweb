@@ -14,6 +14,10 @@
         justify-content: center;
     }
 
+    .card-img:hover .download{
+        display: none;
+    }
+
 }
 
 /* smartphone */
@@ -53,5 +57,30 @@
     .cards{
         justify-content: center;
     }
+
+    .bottom-side-bar{
+        display: none;
+    }
+
+    .song-name{
+        display: none;
+    }
+
+    .anteprima img{
+        width: 30%;
+    }   
 }
 
+/*MEdia query verticale*/
+
+@media screen and (max-height:620px) {
+
+
+.playlist{
+
+    height: 220px;
+    overflow: auto;
+    
+}
+
+}

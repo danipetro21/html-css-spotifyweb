@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,9 @@
     <link rel="stylesheet" href="css/media.css">
     <title>Spotify</title>
 </head>
+
 <body>
-    
+
     <main>
 
         <div class="container top-bar">
@@ -20,62 +22,80 @@
         </div>
 
         <div class="side-bar">
-            
-            <img src="img/logo.svg" class="margin-bottom logo" alt="" id="logo">
-            <img src="img/logo-small.svg" class="margin-bottom logo-xs" alt="">
-            <div class="naviga margin-bottom">
-                <ul>
-                    <li>
-                        <a href="#" class="icon"><i class="fa-solid fa-house"></i></a><a href="#" class="subtitle"> Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a><a href="#" class="subtitle"> Cerca</a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon"><i class="fa-solid fa-book-open"></i></a><a href="#" class="subtitle"> La tua libreria</a>
-                    </li>
-                </ul>
+            <div class="top-side-bar">
+                <img src="img/logo.svg" class="margin-bottom logo" alt="" id="logo">
+                <img src="img/logo-small.svg" class="margin-bottom logo-xs" alt="">
+                <div class="naviga margin-bottom">
+                    <ul>
+                        <li class="selected-home">
+                            <a href="#" class="subtitle">
+                                <i class="fa-solid fa-house"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="subtitle">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                Cerca
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="subtitle">
+                                <i class="fa-solid fa-book-open"></i>
+                                La tua libreria
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="playlist margin-bottom">
+                    <h3>PLAYLIST</h3>
+
+                    <ul>
+                        <li>
+                            <a href="#" class="icon"><i class="fa-solid fa-plus"></i></a><a href="#" class="subtitle">
+                                Crea
+                                Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#" class="subtitle">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#" class="subtitle">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#" class="subtitle">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#" class="subtitle">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#" class="subtitle">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#" class="subtitle">Nome playlist</a>
+                        </li>
+                        <li>
+                            <a href="#" class="subtitle">Nome playlist</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="playlist margin-bottom">
-                <h3>PLAYLIST</h3>
-
-                <ul>
-                    <li>
-                        <a href="#" class="icon"><i class="fa-solid fa-plus"></i></a><a href="#" class="subtitle"> Crea Playlist</a>
-                    </li>
-                    <li>
-                        <a href="#" class="subtitle">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#" class="subtitle">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#" class="subtitle">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#" class="subtitle">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#" class="subtitle">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#" class="subtitle">Nome playlist</a>
-                    </li>
-                    <li>
-                        <a href="#" class="subtitle">Nome playlist</a>
-                    </li>
-                </ul>
+            <div class="bottom-side-bar">
+                    <a href="" class="install-app">Installa app</a>
+                    <hr>
+                    <a href="" class="user">Daniele Petrollo</a>
             </div>
 
-          
+
         </div>
 
         <div class="container player">
 
             <nav class="cat">
                 <ul>
-                    <li><a href="">IN EVIDENZA</a></li>
+                    <li><a href="" class="selected">IN EVIDENZA</a></li>
                     <li><a href="">PODCAST</a></li>
                     <li><a href="">CLASSIFICHE</a></li>
                     <li><a href="">GENERI E MOOD</a></li>
@@ -92,32 +112,52 @@
 
                     <div class="cards">
                         <div class="card">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <a>Heavy Metal</a>
-                            <label>subtitle</label>
+                            <div class="card-img">
+                                <img src="img/metal_lifting.jpg" class="music">
+                                <img src="img/download.svg" class="download">
+                            </div>
+                            
+                                <a>Heavy Metal</a>
+                                <label>subtitle</label>
+
                         </div>
                         <div class="card">
-                            <img src="img/stranger.jpeg" alt="">
+                            <div class="card-img">
+                                <img src="img/stranger.jpeg" class="music" alt="">
+                                <img src="img/download.svg" class="download">
+                            </div>
                             <a>Stranger Things</a>
                             <label>subtitle</label>
                         </div>
                         <div class="card">
-                            <img src="img/aquietplace.jpeg" alt="">
+                            <div class="card-img">
+                                <img src="img/aquietplace.jpeg" class="music" alt="">
+                                <img src="img/download.svg" class="download">
+                            </div>
                             <a>A quiet place</a>
                             <label>subtitle</label>
                         </div>
                         <div class="card">
-                            <img src="img/split.jpeg" alt="">
+                            <div class="card-img">
+                                <img src="img/split.jpeg" class="music" alt="">
+                                <img src="img/download.svg" class="download">
+                            </div>
                             <a>Split</a>
                             <label>subtitle</label>
                         </div>
                         <div class="card">
-                            <img src="img/cure.jpeg" alt="">
+                            <div class="card-img">
+                                <img src="img/cure.jpeg" class="music" alt="">
+                                <img src="img/download.svg" class="download">
+                            </div>
                             <a>A cure for wellness</a>
                             <label>subtitle</label>
                         </div>
                         <div class="card">
-                            <img src="img/sinister.jpeg" alt="">
+                            <div class="card-img">
+                                <img src="img/sinister.jpeg" class="music" alt="">
+                                <img src="img/download.svg" class="download">
+                            </div>
                             <a>Sinister</a>
                             <label>subtitle</label>
                         </div>
@@ -168,15 +208,17 @@
 
 
         </div>
-        
+
 
         <div class="bottom-bar">
 
             <div class="anteprima">
 
                 <img src="img/sinister.jpeg" alt="">
-                <a href="">Sinister</a>
-                <label for="">Brano nome</label>
+                <div class="song-name">
+                    <a href="">Sinister</a>
+                    <label for="">Brano nome</label>
+                </div>
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-folder"></i>
 
@@ -191,8 +233,11 @@
                 </div>
 
                 <div class="temp-line">
-
-
+                    <span for="">0:00</span>
+                    <div class="prog-bar">
+                        <div class="prog-bar-inner"></div>
+                    </div>
+                    <span for="">4:21</span>
                 </div>
             </div>
 
@@ -200,6 +245,10 @@
 
                 <i class="fa-solid fa-display"></i>
                 <i class="fa-solid fa-volume-high"></i>
+                <div class="prog-bar xs">
+                    <div class="prog-bar-inner">
+                    </div>
+                </div>
 
             </div>
 
@@ -215,4 +264,5 @@
     </main>
 
 </body>
+
 </html>
