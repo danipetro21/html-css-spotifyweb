@@ -15,7 +15,7 @@
     }
 
     .card-img:hover .download{
-        display: none;
+        display: inline;
     }
 
 }
@@ -23,9 +23,7 @@
 /* smartphone */
 
 @media screen and (max-width:590px) {
-    .subtitle{
-        display: none;
-    }
+
     
     .logo{
         display: none;
@@ -36,17 +34,30 @@
     }
 
     .side-bar{
-        width: 60px;
+        width: 70px;
         text-align: center;
+        
     }
+    .top-side-bar i{
+        display: inline;
+    }
+
+    .selected-home{
+        border: none;
+    }
+
+    .subtitle{
+        display: none;
+    }
+
     
     .side-bar h3{
         display: none;
     }
 
     .player, .top-bar{
-        left: 50px;
-        width: calc(100% - 50px);
+        left: 70px;
+        width: calc(100% - 70px);
     }
 
     .card{
