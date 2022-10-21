@@ -15,7 +15,7 @@
     }
 
     .card-img:hover .download{
-        display: inline;
+        display: none;
     }
 
 }
